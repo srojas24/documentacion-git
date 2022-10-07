@@ -1,0 +1,112 @@
+Crear un nuevo repositorio local
+git init
+
+Copiar un repositorio
+git clone
+
+Agregar los cambios que se hayan hecho
+git add .
+
+Agregar los cambios y guardar la confirmación
+git commit -am "TEXTO"
+
+Guarda una instántanea de los cambios en el directorio git
+git commit -m "MENSAJE"
+
+Muestra los cambios que se han hecho
+git status
+
+Subir confirmaciones locales al repositorio remoto
+git push NOMBRE-REMOTO RAMA
+
+Subir una rama al repositorio remoto
+git push NOMBRE-REMOTO NOMBRE-RAMA
+
+Subir todas las ramas a un repositorio remoto
+git push --all NOMBRE-REMOTO
+
+Acceder a una rama
+git checkout NOMBRE-RAMA
+
+Ver los repositorios remotos
+git remote
+
+Ver los repositorios remotos con las URLs
+git remote -v
+
+Agregar un nuevo repositorio remoto
+git remote add NOMBRE-REMOTO ENLACE-REPOSITORIO-REMOTO
+
+Eliminar un repositorio remoto
+git remote rm NOMBRE-REMOTO
+
+Mostrar las ramas que hay
+git branch
+
+Crear una nueva rama
+git branch NOMBRE-RAMA
+
+Eliminar una rama en el repositorio local
+git branch -d NOMBRE-RAMA
+
+Eliminar una rama en el repositorio remoto
+git push NOMBRE-REMOTO :NOMBRE-RAMA
+
+Descargar los cambios del repositorio remoto al directorio local
+git pull origin RAMA-REMOTA
+
+Consultar la última confirmación hecha en la rama actual
+git show
+
+Ver el histórico de confirmaciones que se han hecho
+git log
+
+Ver el histórico de confirmaciones en una sola línea
+git log --oneline
+
+Ver el histórico de confirmaciones en una línea y tenerlos en la pantalla
+git log --oneline | cat
+
+Ver el histórico de confirmaciones en una línea especificando la cantidad
+gir log --oneline -CANTIDAD
+
+Unir 2 ramas
+git merge NOMBRE-RAMA
+
+Anular una confirmación anterior
+git revert SHA
+
+Ver la diferencia entre un commit y otro
+git diff SHA-PRIMER-COMMIT SHA-SEGUNDO-COMMIT
+
+-----------------------------
+
+Datos adicionales
+
+Para salir de git show o git log
+q
+
+Error al ejecutar
+git commit -m "TEXTO"
+Solución:
+git config --global user.name "srojas24"
+git config --global user.email silas.peru.e@gmail.com
+
+Proceso para subir un proyecto local a un repositorio
+- Crear un repositorio sin README
+- En caso de que sea un proyecto Java en Netbeans definir las capas con un elemento
+- Dirigirse a la carpeta del proyecto y ejecutar los siguientes comandos
+
+git init
+
+Agregar un archivo README
+
+git add .
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/srojas24/documentacion-java.git
+git push -u origin main
+
+Ejemplo de README para colocar
+# documentacion-php
+Este es un repositorio con la documentación en PHP que se haga.
