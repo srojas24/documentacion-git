@@ -119,3 +119,10 @@ git push -u origin main
 Ejemplo de README para colocar
 # documentacion-php
 Este es un repositorio con la documentación en PHP que se haga.
+
+Ingresar un mensaje de confirmación para explicar una confirmación
+1. Presionar i (para insertar)
+2. Escribir el mensaje de confirmación
+3. Presionar esc (escapar)
+4. Escribir :wq (escribir y salir)
+5. Luego presionar enter
