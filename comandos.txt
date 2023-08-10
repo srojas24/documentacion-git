@@ -88,6 +88,9 @@ git diff SHA-PRIMER-COMMIT SHA-SEGUNDO-COMMIT
 Recuperar todas las ramas de un repositorio
 git fetch NOMBRE-REMOTO
 
+Sincronizar las ramas del repositorio local con las del repositorio remoto
+git fetch -p
+
 -----------------------------
 
 Datos adicionales
