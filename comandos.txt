@@ -13,6 +13,9 @@ git commit -am "TEXTO"
 Guarda una instántanea de los cambios en el directorio git
 git commit -m "MENSAJE"
 
+Descartar los cambios sin todavía haber confirmado
+git restore .
+
 Muestra los cambios que se han hecho
 git status
 
