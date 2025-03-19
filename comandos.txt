@@ -94,6 +94,9 @@ git fetch NOMBRE-REMOTO
 Sincronizar las ramas del repositorio local con las del repositorio remoto
 git fetch -p
 
+Mostrar las propiedades de configuración
+git config --list
+
 -----------------------------
 
 Datos adicionales
@@ -132,3 +135,10 @@ Ingresar un mensaje de confirmación para explicar una confirmación
 3. Presionar esc (escapar)
 4. Escribir :wq (escribir y salir)
 5. Luego presionar enter
+
+Solución al no encontrar repositorio por el tema del usuario
+1. Abrir el Panel de control
+2. Seleccionar "Cuentas de usuario"
+3. Seleccionar "Administrador de credenciales"
+4. Hacer clic en "Credenciales de Windows"
+5. Eliminar cualquier credencial relacionada con Git
